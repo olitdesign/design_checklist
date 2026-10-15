@@ -7,15 +7,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 :root{
-  --bg:#ffffff; --surface:#f7f7fa; --raise:#ffffff; --ink:#232230; --sub:#6c6b7b; --line:#e5e4ee; --check:#b9b8c9;
+  --bg:#ffffff; --surface:#f7f7fa; --raise:#ffffff; --ink:#232230; --sub:#6c6b7b; --line:#e5e4ee; --check:#bfbece;
   --accent:#664fff; --accent-text:#4f3fc4; --accent-soft:#f0eeff; --accent-mid:#c9c2fd; --on-accent:#ffffff;
   --font:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#121118; --surface:#1b1a25; --raise:#242331; --ink:#eeedf6; --sub:#a9a7bd; --line:#32304a; --check:#5a5877;
-    --accent:#a597ff; --accent-text:#bdb3ff; --accent-soft:#272349; --accent-mid:#4a4188; --on-accent:#14121f;
-  }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
@@ -92,6 +86,11 @@ footer{border-top:1px solid var(--line);padding:20px 0 48px;color:var(--sub);fon
 }
 @media print{.topbar{display:none}body{background:#fff}.card{break-inside:avoid}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ---- 화이트 + 시그니처 퍼플 테마 (가운데 정렬 레이아웃 유지) ---- */
+.hero{text-align:center}
+.hero p{margin-left:auto;margin-right:auto}
+.card{border-radius:18px}
 </style>
 </head>
 <body>
